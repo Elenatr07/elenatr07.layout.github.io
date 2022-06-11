@@ -1654,7 +1654,7 @@ input:focus-visible {
     display: block;
 }
 
-.quantity {
+.quantity-cart {
     box-sizing: border-box;
     background: #FFFFFF;
 
@@ -1839,7 +1839,7 @@ input:focus-visible {
     color: #575757;
 }
 
-.quantity {
+.quantity-cart {
     width: 44px;
     height: 25px;
     text-align: center;
