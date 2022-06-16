@@ -340,25 +340,31 @@ input:focus-visible {
     align-items: center;
     justify-content: flex-end;
     min-height: inherit;
-    background-image: url(img/brand.png);
+    background-image: url('https://i.postimg.cc/nh71xLyT/Layer-57-removebg-preview-1.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom left -225px;
 
+
+
+
 }
+
 
 .banner-title {
     display: block;
-    width: 100%;
+    margin: 0;
     max-width: 377px;
-    margin: 0px 95px 87px 0;
-    font-size: 49px;
+    margin: 0 95px 87px 0;
     font-style: normal;
     font-weight: 900;
+    font-size: 49px;
     line-height: 51.6px;
     color: #222222;
     text-transform: uppercase;
     position: relative;
+
+
 }
 
 .banner-title::before {
@@ -398,7 +404,7 @@ input:focus-visible {
 
 .categories-item {
     width: 100%;
-    max-width: 360px;
+    max-width: 32%;
     min-height: 260px;
     margin: 0 0 30px 0;
     background-size: cover;
@@ -508,7 +514,7 @@ input:focus-visible {
 }
 
 .products-item {
-    width: 100%;
+    width: 32%;
     margin: 0;
     text-align: center;
     max-width: 360px;
@@ -728,6 +734,17 @@ input:focus-visible {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #F3F3F3;
+}
+
+.subscribe-center-block {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    min-height: inherit;
 }
 
 .subscribe-info {
@@ -2222,23 +2239,54 @@ ol li::before {
     color: #000000;
 }
 
-@media screen and (max-width: 1140px) {
-    #main-cart-container {
-        width: 1140px;
-    }
-}
-
 @media (max-width: 768px) {
-    .container {
-        width: 768px;
-    }
 
     .banner {
-        width: 770px;
+        max-width: 770px;
+        min-height: 368px;
     }
 
     .banner-wrp {
-        background-image: url()
+        background-position: bottom left -25px;
     }
 
+
+    .banner-title {
+        max-width: 283px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 53px;
+        margin: 138px 34px 151px 0;
+    }
+
+    .banner-subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    .categories-item {
+        max-width: 232px;
+        min-height: 167px;
+    }
+
+    .products-item {
+        width: 100%;
+    }
+
+    .features-list {
+        justify-content: center;
+    }
+
+    .copyright {
+        display: flex;
+    }
+
+    .subscribe {
+        flex-direction: column;
+    }
+
+    .subscribe-center-block {
+        flex-direction: column;
+    }
 }
