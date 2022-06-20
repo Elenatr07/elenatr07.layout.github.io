@@ -515,7 +515,7 @@ input:focus-visible {
 
 .products-item {
     width: 32%;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
     max-width: 360px;
     position: relative;
@@ -855,6 +855,18 @@ input:focus-visible {
 }
 
 /* sudscribe end */
+.center-block-footer {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    min-height: inherit;
+
+}
+
 .copyright {
     min-height: 79px;
     padding: 5px 32px;
@@ -2270,6 +2282,10 @@ ol li::before {
         min-height: 167px;
     }
 
+    .categories-item-link {
+        padding-top: 58px;
+    }
+
     .products-item {
         width: 100%;
     }
@@ -2288,5 +2304,117 @@ ol li::before {
 
     .subscribe-center-block {
         flex-direction: column;
+    }
+
+}
+
+@media (max-width: 378px) {
+    .cart-btn-link {
+        display: none;
+    }
+
+    .account-btn {
+        display: none;
+    }
+
+    .menu-btn {
+        margin-left: 130px;
+    }
+
+    .banner-wrp {
+        background-image: none;
+        justify-content: center;
+        padding-left: 30px;
+
+    }
+
+    .banner-title {
+        max-width: 236px;
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 45px;
+
+    }
+
+    .banner-subtitle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .page-header {
+        padding: 0 16px;
+    }
+
+    .categories {
+        margin: 0 0 64px 0;
+    }
+
+    .categories-item {
+        max-width: 343px;
+        min-height: 247px;
+    }
+
+    .categories-item:last-child {
+        min-height: 111px;
+        max-width: 343px;
+
+    }
+
+    .categories-item:last-child .categories-item-link {
+        padding-top: 30px;
+    }
+
+    .categories-list {
+        justify-content: center;
+    }
+
+    .categories-item-link {
+        padding-top: 98px;
+    }
+
+    .product-txt {
+        margin-bottom: 64px;
+    }
+
+    .products-item {
+        max-width: 359px;
+        width: 100%;
+    }
+
+    .features {
+        padding: 48px 20px 98px 20px;
+    }
+
+    .subscribe {
+        padding: 64px 20px 109px 20px;
+    }
+
+    .subscribe-info {
+        margin: 0;
+    }
+
+    .subscribe-info-txt {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .subscribe-form-subtitle {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .center-block-footer {
+        flex-direction: column;
+    }
+
+    .copyright-txt {
+        order: 2;
+    }
+
+    .socials-list {
+        order: 1;
+        padding-top: 43px;
+        padding-bottom: 40px;
     }
 }
